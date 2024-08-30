@@ -14,11 +14,16 @@
     android:orientation="vertical"
 
     >
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="160dp"
+       android:layout_marginTop="50dp"
+      android:src="@drawable/img"
+      />
 
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       android:layout_marginTop="200dp"
        android:background="@drawable/my_shape"
        android:orientation="vertical">
 
