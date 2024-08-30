@@ -12,14 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#87CEEB"
-
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="20dp"
+            android:layout_height="180dp"
             android:src="@drawable/login_img" />
 
         <LinearLayout
@@ -31,8 +28,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
-                android:layout_marginHorizontal="45dp"
-                android:layout_marginTop="70dp"
+                android:layout_marginHorizontal="38dp"
+                android:layout_marginTop="40dp"
                 android:fontFamily="sans-serif"
                 android:text="Email Address "
                 android:textSize="20dp"
@@ -42,6 +39,7 @@
                 android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
+                android:padding="10dp"
                 android:layout_marginHorizontal="38dp"
                 android:background="@drawable/border"
                 android:textColor="@color/black" />
@@ -49,8 +47,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
-                android:layout_marginHorizontal="45dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="38dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif"
                 android:text="Password "
                 android:textSize="20dp"
@@ -61,21 +59,50 @@
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginHorizontal="38dp"
+                android:padding="10dp"
                 android:background="@drawable/border"
                 android:inputType="textPassword"
                 android:textColor="@color/black" />
 
             <Button
+                android:id="@+id/login_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:backgroundTint="#5A5A5A"
                 android:paddingHorizontal="60dp"
                 android:paddingVertical="15dp"
                 android:text="Log In"
                 android:textSize="20dp" />
 
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Are you new user? Register"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_google"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_background2"
+                android:drawableStart="@drawable/google"
+                android:drawablePadding="16dp"
+                android:padding="16dp"
+                android:text="Log In with google"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
@@ -86,7 +113,7 @@
         android:layout_width="170dp"
         android:layout_height="130dp"
         android:gravity="bottom"
-        android:src="@drawable/img"
+        android:src="@drawable/circles"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

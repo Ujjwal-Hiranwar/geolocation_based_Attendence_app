@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "900205657253",
+    "firebase_url": "https://books-app-83d93-default-rtdb.firebaseio.com",
+    "project_id": "books-app-83d93",
+    "storage_bucket": "books-app-83d93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900205657253:android:386366e9fdeaa5db55614c",
+        "android_client_info": {
+          "package_name": "com.example.signupapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwfCe2efmMM1wDv4I_22Re5r9dL_SRgeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900205657253:android:3a700adf13becb1255614c",
+        "android_client_info": {
+          "package_name": "com.mypackage.attendencemanagementapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwfCe2efmMM1wDv4I_22Re5r9dL_SRgeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

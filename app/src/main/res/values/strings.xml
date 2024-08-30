@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Attendence Management App</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="default_web_client_id">900205657253-vkrr76a7c5u4m5kgl5lpqodnuhh3gua9.apps.googleusercontent.com</string>
+    <string name="maps_api">AIzaSyAVO2TrXEatbnGGg3gQGO8Kaelry99rz8o</string>
+
 </resources>

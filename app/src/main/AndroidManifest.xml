@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,26 +17,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AttendenceManagementApp"
         tools:targetApi="31">
-        <activity
-            android:name=".login"
+
+        <receiver
+            android:name=".GeofenceBroadcastReceiver"
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
-            android:exported="false"
-            android:label="@string/title_activity_register"
-            android:theme="@style/Theme.AttendenceManagementApp" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+        </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAVO2TrXEatbnGGg3gQGO8Kaelry99rz8o" />
+
     </application>
 
 </manifest>
